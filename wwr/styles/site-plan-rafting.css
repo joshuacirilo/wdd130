@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+
+body{
+    font-family: var(--paragraph-font) ;
+    max-width: 960px;
+    padding: 20px;
+}
+
+:root{
+    --primary-color: #FFB703;
+    --secondary-color: #8ECAE6;
+    --accent1-color: #219EBC;
+    --accent2-color: #FFB703;
+    --color-link:#023047 ;
+    
+    --heading-font: "Open Sans",serif;
+    --paragraph-font: "Open Sans",serif;
+
+    --nav-background-color: #023047;
+    --nav-link-color: #219EBC;
+    --nav-hover-link-color: #023047;
+    --nav-hover-background-color: #219EBC;
+}
+
+h1{
+    font-family: var(--heading-font);
+    text-align: center;
+    color: var(--primary-color);
+
+}
+
+h2, h5,h6 {
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+}
+
+h3,h4 {
+    font-family: var(--heading-font);
+    color: var(--secondary-color);
+}
+
+header {
+    padding: 20px;
+    background-color: var(--accent1-color);
+}
+
+p{
+    padding: 25px;
+}
+
+nav{
+    background-color: var(--nav-background-color);
+    font-size: 1.2rem;
+    display: flex;
+}
+
+a{
+    color: var(--color-link);  
+}
+
+nav a {
+    display: block;
+    color: var(--nav-link-color);
+    text-decoration: none;
+    padding: 4rem;
+}
+
+nav a:link, nav a:visited{
+    color: var(--nav-link-color);
+}
+
+nav a:hover {
+color:var(--nav-hover-link-color);
+background-color: var(--nav-hover-background-color);
+}
