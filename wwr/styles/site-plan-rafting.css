@@ -3,10 +3,14 @@
 
 body{
     font-family: var(--paragraph-font) ;
-    max-width: 960px;
-    padding: 20px;
+    max-width: 1780px;
+    padding: 40px;
+    
 }
-
+/*comment 
+1
+2
+*/
 :root{
     --primary-color: #FFB703;
     --secondary-color: #8ECAE6;
@@ -23,16 +27,20 @@ body{
     --nav-hover-background-color: #219EBC;
 }
 
+
+
 h1{
     font-family: var(--heading-font);
     text-align: center;
     color: var(--primary-color);
+ 
 
 }
 
 h2, h5,h6 {
     font-family: var(--heading-font);
     color: var(--primary-color);
+    float: center;
 }
 
 h3,h4 {
@@ -59,11 +67,14 @@ a{
     color: var(--color-link);  
 }
 
+
+
 nav a {
     display: block;
     color: var(--nav-link-color);
     text-decoration: none;
-    padding: 4rem;
+    padding: 1rem;
+    
 }
 
 nav a:link, nav a:visited{
@@ -74,3 +85,12 @@ nav a:hover {
 color:var(--nav-hover-link-color);
 background-color: var(--nav-hover-background-color);
 }
+
+.col1 img {
+
+	margin: 0 0 15px 15px;
+	box-shadow: 0 0 20px #FFB703;
+    padding: 20px;
+    
+}
+
