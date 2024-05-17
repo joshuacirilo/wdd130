@@ -6,10 +6,7 @@ body{
     padding: 40px;
     
 }
-/*comment 
-1
-2
-*/
+/*General things */
 :root{
     --primary-color: #FFB703;
     --secondary-color: #8ECAE6;
@@ -27,6 +24,76 @@ body{
     --nav-hover-background-color: #219EBC;
 }
 
+/*Fist part of the web page*/
+header {
+	/*margin: 1rem auto;*/
+	display: grid;
+	grid-template-columns: 200px 1000px 100px;
+	align-items: center;
+    justify-content: space-around;
+	border-bottom: 1px solid #ccc;
+	max-width: 2400px;
+    text-align: center; 
+    background-color: steelblue;
+   
+}
+
+.logo img {
+	margin: 2rem -5rem 1rem;
+	width: 150px;
+    height: auto;
+}
+
+
+header nav{
+
+    padding: 1rem;
+    display: flex;
+    justify-content: space-evenly;
+   
+}
+
+.navigation {
+    display: flex;
+    list-style: none;    
+}
+
+
+.navigation li {
+	flex: 1 1 100%;
+    color: white;
+    display: block;
+    padding: 0.5rem;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 800;
+    color: #fff; /*shorthand for white*/
+}
+
+
+.navigation a {
+	display: block;
+	color: white;
+    display: block;
+    padding: 0.5rem;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 800;
+    color: #fff; /*shorthand for white*/;
+	padding: 9px;
+    width:  8rem;
+	text-decoration: none;
+    text-align: center;
+}
+
+.navigation a:hover {
+    color: #2c76d7;
+    background-color:#fff ;
+    }
+    
+/*finish the first part*/
+
+/*second part*/
 
 h1{
     font-family: var(--heading-font);
@@ -34,35 +101,6 @@ h1{
     top: 400px; left: 700px;
     color: var(--primary-color);
 }
-
-h2, h5,h6 {
-    position: relative;
-    top: 0px; left: 0px;
-    font-family: var(--heading-font);
-    color: var(--primary-color);
-    text-align: left;
-}
-
-h3,h4 {
-    position: relative;
-    top: 0px; left: 0px;
-    font-family: var(--heading-font);
-    color: var(--secondary-color);
-    text-align: left;
-}
-
-header nav a {
-    color: var(--nav-link-color);
-    text-decoration: none;
-    padding: 1rem;
-    
-}
-
-nav{
-    font-size: 1.2rem;
-    display: flex;
-}
-
 .hero img {
     display: block;
     width: 100%;
@@ -70,7 +108,7 @@ nav{
 
 }
 
-.fistImage img {width: 1600px; height: 500px;}
+.fistImage img {width: 1568px; height: 500px;}
 
 blockquote {
 	margin: 0;
@@ -95,5 +133,110 @@ blockquote {
 	height: auto;
 }
 
+/*finish second part*/
 
+.container {
+    display: flex;
+    align-items: center; 
+    background:  #ffb80385;
+  }
 
+  
+.container img {
+    margin: 20px;
+
+  }
+  
+  .texto {
+    flex: 1; 
+  }
+
+/*finish second part*/
+
+/*third part*/
+h2{
+    position: relative;
+    top: 0px; left: 0px;
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+    text-align: center;
+    margin-top: 1rem;
+    text-decoration:double;
+    
+}
+
+figure{
+    margin-right: 0;
+    margin-left: 0;
+
+}
+
+.containerpictures{
+    display: grid;
+    grid-template-columns: repeat(5, 2fr); /* Cinco columnas del mismo ancho */
+    gap: 10px; /* Espacio entre las imágenes */
+    margin-top: 1rem;
+    
+}
+
+.imagen1 img{
+    width: 300px;
+    height: auto;
+    grid-column: 1/2;
+    border: 3px solid steelblue;
+ 
+}
+
+.imagen2 img {
+    width: 300px;
+    height: 300px;
+    grid-column: 2/3;
+    border: 3px solid steelblue;
+}
+
+.imagen3 img{
+    width: 300px;
+    height: auto;
+    grid-column: 3/4;
+    border: 3px solid steelblue;
+}
+
+.imagen4 img{
+    width: 300px;
+    height: auto;
+    grid-column: 4/5;
+    border: 3px solid steelblue;
+}
+
+.imagen5 img{
+    width: 300px;
+    height: auto;
+    grid-column: 5/6;
+    border: 3px solid steelblue;
+}
+
+h3,h4 {
+    position: relative;
+    top: 0px; left: 0px;
+    font-family: var(--heading-font);
+    color: var(--secondary-color);
+    text-align: left;
+}
+
+/*finish third part*/
+
+/*footer*/
+.containerfoter{
+display: grid;
+grid-template-columns: 600px 700px 250px;
+}
+
+.textfoter{
+    grid-column:  2/3;
+    justify-content: center;
+}
+
+.foterimg img{
+    grid-column: 3/4;
+    width: 50px;
+}
