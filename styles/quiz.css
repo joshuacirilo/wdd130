@@ -34,9 +34,10 @@ body {
     margin: 0 auto;
     padding: 1rem;
     border: 1px solid rgba(0, 0, 0, 0.1);
-    border-radius: 0.5rem;
+    border-radius: 0.2rem;
     background-color: #eee;
     display: grid;
+    align-content: center;
   }
 
 
@@ -44,84 +45,48 @@ body {
 fieldset {
     display: grid;
     grid-gap: 0.5rem;
-    margin: 1rem;
+    margin: 4rem;
     border: 1px solid rgba(0, 0, 0, 0.2);
-    padding: 1rem;
+    padding: 2.5rem;
+    align-content: center;
 }
 
-
-legend {
-    padding: 0.5rem;
-    color: navy;
-    font-size: 1.3em;
-  }
-
-  
 label, input, button, select, textarea {
     font-family: Roboto, Arial, sans-serif;
+
 }
 
-
 label {
-    text-align: right;
-    padding-right: 1rem;
+    padding-right: 1.2rem;
+    text-align: center;
+    margin: 0.5rem;
   }
 
   
 input, select, textarea {
-    padding: 0.5rem;
+    padding: 0.3rem;
     font-size: 1.1rem;
-  }
+    margin: 0.2rem;
+    width: 25rem ;
 
-  
-input[type="checkbox"] {
-    width: 22px;
-    height: 22px;
-    vertical-align: bottom;
-  }
+}
 
- button{
-    margin: 1rem;
+.q4 img{
+    width: 25.5rem;
+}
+
+
+button{
+    margin: 2rem;
     background-color: navy;
     color: #fff;
     border: none;
     border-radius: .5rem;
     padding: .75rem;
     font-size: 1.2rem;
-    
+    width: 550px;
   }
   
   button:hover {
-    background-color: darkgreen;
+    background-color: rgb(9, 58, 138);
   } 
-
-  
-  footer {
-    margin: 1rem auto 0;
-    width: 650px;
-    text-align: center;
-    font-size: 0.8em;
-    color: #777;
-    border-top: 1px solid #ccc;
-  }
-   
-  .form-item {
-    display: grid;
-    align-items: center;
-  }
-  
-
-  
-.column1 {
-    grid-template-columns: 15fr 1fr;
-    margin: 0.5rem 0;
-  }
-
- 
-
-.column2 {
-    grid-template-columns: 1fr 2fr;
-    grid-column: 1/3;
-  }
- 
-
